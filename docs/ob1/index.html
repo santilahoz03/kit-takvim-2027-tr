@@ -3,29 +3,43 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="noindex,nofollow">
 <title>Ambalaj ve Etiket Şablonları — İndirme</title>
 <style>
-  html, body { margin:0; background:#FAF7F2; color:#2B2522; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  .wrap { max-width:560px; margin:0 auto; padding:64px 20px; text-align:center; }
-  .badge { display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; background:#EFE6DA; padding:6px 12px; border-radius:99px; }
-  h1 { font-size:28px; line-height:1.2; margin:18px 0 10px; }
-  p { font-size:17px; line-height:1.55; color:#5B514B; }
-  .card { background:#fff; border:1px solid #EAE0D5; border-radius:16px; padding:24px 20px; margin-top:28px; }
-  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; background:#1F9D55; margin-right:8px; animation:p 1.6s infinite; }
-  @keyframes p { 50% { opacity:.3; } }
-  @media (prefers-reduced-motion: reduce) { .dot { animation:none; } }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #FAF7F2; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .card { background: white; border-radius: 16px; padding: 40px 32px; max-width: 480px; width: 100%; text-align: center; box-shadow: 0 4px 24px rgba(0,0,0,.08); }
+  .dot { display: inline-block; width: 12px; height: 12px; background: #22c55e; border-radius: 50%; margin-right: 8px; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,.4)} 50%{box-shadow:0 0 0 8px rgba(34,197,94,0)} }
+  .status { font-size: 13px; color: #22c55e; font-weight: 600; margin-bottom: 24px; }
+  h1 { font-size: 22px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+  .subtitle { font-size: 14px; color: #6b7280; margin-bottom: 32px; }
+  .contents { background: #f9f5f0; border-radius: 10px; padding: 16px 20px; text-align: left; margin-bottom: 28px; }
+  .contents h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: #9ca3af; margin-bottom: 10px; }
+  .contents ul { list-style: none; }
+  .contents li { font-size: 14px; color: #374151; padding: 3px 0; }
+  .contents li::before { content: "✓ "; color: #22c55e; font-weight: 700; }
+  .btn { display: block; background: #D4A843; color: white; text-decoration: none; font-size: 16px; font-weight: 700; padding: 16px 24px; border-radius: 10px; transition: background .15s; }
+  .btn:hover { background: #B8892F; }
+  .note { font-size: 12px; color: #9ca3af; margin-top: 16px; }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <span class="badge">Satın alma onaylandı</span>
-    <h1>Ambalaj ve Etiket Şablonları Paketi</h1>
-    <p>Teşekkürler! 35 şablon dosyası (25 etiket + 10 ambalaj) hazırlanıyor. Bu sayfa yakında indirme linkinizle güncellenecek.</p>
-    <div class="card">
-      <p><span class="dot"></span><strong>Bu linki kaydedin</strong></p>
-      <p>Bu sizin ömür boyu erişiminizdir. Kısa süre içinde geri dönün ve tüm şablonlarınızı burada bulacaksınız.</p>
-    </div>
+<div class="card">
+  <p class="status"><span class="dot"></span>Ürününüz hazır</p>
+  <h1>Ambalaj ve Etiket Şablonları</h1>
+  <p class="subtitle">15 profesyonel baskıya hazır şablon — PDF formatında</p>
+  <div class="contents">
+    <h3>İçerik</h3>
+    <ul>
+      <li>25 hediye etiketi (5 tasarım × 5 adet/sayfa)</li>
+      <li>10 masaüstü takvim kılıfı şablonu</li>
+      <li>A4 baskıya hazır, kesmek için rehber çizgili</li>
+      <li>Toplam 35 baskı öğesi</li>
+    </ul>
   </div>
+  <a class="btn" href="ob1-ambalaj-etiket-sablonlari.zip" download>⬇ Şablonları İndir (PDF)</a>
+  <p class="note">ZIP dosyası · 15 PDF şablon</p>
+</div>
 </body>
 </html>
